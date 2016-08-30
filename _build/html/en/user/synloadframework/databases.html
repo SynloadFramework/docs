@@ -83,7 +83,11 @@
                 <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Databases Included With Synload Framework</a><ul>
 <li><a class="reference internal" href="#mysql">MySQL</a><ul>
+<li><a class="reference internal" href="#sql-manager">SQL Manager</a></li>
 <li><a class="reference internal" href="#dbenabled">dbenabled</a></li>
+<li><a class="reference internal" href="#dbuser">dbuser</a></li>
+<li><a class="reference internal" href="#dbpass">dbpass</a></li>
+<li><a class="reference internal" href="#jdbc">jdbc</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#neo4j">Neo4J</a></li>
@@ -148,10 +152,35 @@ dbuser=%username
 dbpass=%password
 </pre></div>
 </div>
+<div class="section" id="sql-manager">
+<h3>SQL Manager<a class="headerlink" href="#sql-manager" title="Permalink to this headline">¶</a></h3>
+<p>If you have a module that requires the automatic installation of tables into the database, then you will need to enable this option.</p>
+</div>
 <div class="section" id="dbenabled">
 <h3>dbenabled<a class="headerlink" href="#dbenabled" title="Permalink to this headline">¶</a></h3>
 <p>This setting will enable and disable the mysql connector, it will attempt to connect to the mysql server on server start.</p>
-<p>Change this to <em>true</em> if you want to use mysql</p>
+<p>Change this to <code class="docutils literal"><span class="pre">true</span></code> if you want to use mysql</p>
+</div>
+<div class="section" id="dbuser">
+<h3>dbuser<a class="headerlink" href="#dbuser" title="Permalink to this headline">¶</a></h3>
+<p>This variable defines the user that will be used to connect to the database instance.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Replace</span> <span class="o">%</span><span class="n">username</span> <span class="k">with</span> <span class="n">the</span> <span class="n">connection</span> <span class="n">username</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dbpass">
+<h3>dbpass<a class="headerlink" href="#dbpass" title="Permalink to this headline">¶</a></h3>
+<p>This variable defines the password used in combination with the user name above.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Replace</span> <span class="o">%</span><span class="n">password</span> <span class="k">with</span> <span class="n">the</span> <span class="n">connection</span> <span class="n">password</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="jdbc">
+<h3>jdbc<a class="headerlink" href="#jdbc" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Java_Database_Connectivity">Information on JDBC connection strings</a></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Replace</span> <span class="o">%</span><span class="n">dbname</span> <span class="k">with</span> <span class="n">the</span> <span class="n">name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">database</span> <span class="n">on</span> <span class="n">the</span> <span class="n">server</span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="neo4j">
